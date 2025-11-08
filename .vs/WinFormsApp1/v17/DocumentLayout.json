@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Arseni\\MineSweeper\\",
+  "WorkspaceRootPath": "D:\\Arseniy\\TextsC#\\Saper\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55DC4AD1-84F6-4979-9437-3EADF5F6BB24}|WinFormsApp1\\WinFormsApp1.csproj|d:\\arseni\\minesweeper\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{55DC4AD1-84F6-4979-9437-3EADF5F6BB24}|WinFormsApp1\\WinFormsApp1.csproj|d:\\arseniy\\textsc#\\saper\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55DC4AD1-84F6-4979-9437-3EADF5F6BB24}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55DC4AD1-84F6-4979-9437-3EADF5F6BB24}|WinFormsApp1\\WinFormsApp1.csproj|d:\\arseni\\minesweeper\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{55DC4AD1-84F6-4979-9437-3EADF5F6BB24}|WinFormsApp1\\WinFormsApp1.csproj|d:\\arseniy\\textsc#\\saper\\winformsapp1\\buttonstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55DC4AD1-84F6-4979-9437-3EADF5F6BB24}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buttonstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55DC4AD1-84F6-4979-9437-3EADF5F6BB24}|WinFormsApp1\\WinFormsApp1.csproj|d:\\arseniy\\textsc#\\saper\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{55DC4AD1-84F6-4979-9437-3EADF5F6BB24}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 16,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -78,24 +86,37 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ButtonState.cs",
+              "DocumentMoniker": "D:\\Arseniy\\TextsC#\\Saper\\WinFormsApp1\\ButtonState.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\ButtonState.cs",
+              "ToolTip": "D:\\Arseniy\\TextsC#\\Saper\\WinFormsApp1\\ButtonState.cs",
+              "RelativeToolTip": "WinFormsApp1\\ButtonState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T20:37:44.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Arseni\\MineSweeper\\WinFormsApp1\\Form1.cs",
+              "DocumentMoniker": "D:\\Arseniy\\TextsC#\\Saper\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
-              "ToolTip": "D:\\Arseni\\MineSweeper\\WinFormsApp1\\Form1.cs*",
+              "ToolTip": "D:\\Arseniy\\TextsC#\\Saper\\WinFormsApp1\\Form1.cs*",
               "RelativeToolTip": "WinFormsApp1\\Form1.cs*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAuwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwBwAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T17:18:16.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Arseni\\MineSweeper\\WinFormsApp1\\Form1.cs",
+              "DocumentMoniker": "D:\\Arseniy\\TextsC#\\Saper\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
-              "ToolTip": "D:\\Arseni\\MineSweeper\\WinFormsApp1\\Form1.cs [Design]*",
+              "ToolTip": "D:\\Arseniy\\TextsC#\\Saper\\WinFormsApp1\\Form1.cs [Design]*",
               "RelativeToolTip": "WinFormsApp1\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T16:53:37.168Z",

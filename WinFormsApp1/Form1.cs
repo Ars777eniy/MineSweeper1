@@ -1,4 +1,4 @@
-namespace WinFormsApp1
+﻿namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
@@ -10,6 +10,11 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            StartGame();
+        }
+        void StartGame()
+        {
+            tableLayoutPanel1.Controls.Clear();
             Random random = new Random();
 
             for (int i = 0; i < 10; i++)
@@ -29,20 +34,33 @@ namespace WinFormsApp1
                 }
             }
         }
-
         private void buttons_Click(object sender, MouseEventArgs e)
         {
+            Button button = (Button)sender;
+            ButtonState state = (ButtonState)button.Tag;
+
             if (e != null && e.Button == MouseButtons.Right)
             {
+                if (string.IsNullOrEmpty(button.Text))
+                {
+                    button.Text = "/";
+                    button.Enabled = true;
+                }
+                else
+                {
+                    button.Text = "";
+                    button.Enabled = true;
+                }
                 return;
             }
 
-            Button button = (Button)sender;
-            ButtonState state = (ButtonState)button.Tag;
            
             if (state.IsBomb)
             {
                 button.Text = "*";
+                ShowAllBombs();
+                MessageBox.Show("Поражение!");
+                StartGame();
             }
             else
             {
@@ -55,9 +73,34 @@ namespace WinFormsApp1
                 }
                 
             }
-
+            Win();
         }
 
+        void Win()
+        {
+            int Bomb = 0;
+            int Safe = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    ButtonState checkedState = (ButtonState)buttons[i, j].Tag;
+                    if (checkedState.IsBomb && buttons[i, j].Enabled)
+                    {
+                        Bomb++;
+                    }
+                    else if (checkedState.IsBomb == false && buttons[i, j].Enabled == false)
+                    {
+                        Safe++;
+                    }
+                }
+            }
+            if(Bomb + Safe == 100)
+            {
+                MessageBox.Show("Победа!");
+                StartGame();
+            }
+        }
         private void OpenArroundZeroButtons(ButtonState state)
         {
             for (int i = state.I - 1; i <= state.I + 1; i++)
@@ -93,6 +136,20 @@ namespace WinFormsApp1
                 }
             }
             return countBomb;
+        }
+        void ShowAllBombs()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    ButtonState checkedState = (ButtonState)buttons[i, j].Tag;
+                    if (checkedState.IsBomb)
+                    {
+                        buttons[i, j].Text = "*";
+                    }
+                }
+            }
         }
     }
 }

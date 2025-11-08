@@ -18,21 +18,25 @@ namespace WinFormsApp1
                 {
                     buttons[i, j] = new Button()
                     {
-                        Name = $"{i}{j}",
                         Text = $"",
                         Size = new System.Drawing.Size(40, 40),
                         Margin = new System.Windows.Forms.Padding(0, 0, 0, 0),
                         Tag = new ButtonState(i, j, random.Next(0, 10) < 1),
                         TabStop = true,
                     };
-                    buttons[i, j].Click += buttons_Click;
+                    buttons[i, j].MouseUp += buttons_Click;
                     tableLayoutPanel1.Controls.Add(buttons[i, j], j, i);
                 }
             }
         }
 
-        private void buttons_Click(object sender, EventArgs e)
+        private void buttons_Click(object sender, MouseEventArgs e)
         {
+            if (e != null && e.Button == MouseButtons.Right)
+            {
+                return;
+            }
+
             Button button = (Button)sender;
             ButtonState state = (ButtonState)button.Tag;
            

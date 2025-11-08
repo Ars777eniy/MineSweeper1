@@ -60,6 +60,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.Size = new Size(776, 429);
             tableLayoutPanel1.TabIndex = 9;
+            tableLayoutPanel1.TabStop = true;
             // 
             // Form1
             // 

@@ -22,7 +22,7 @@ namespace WinFormsApp1
                         Text = $"",
                         Size = new System.Drawing.Size(40, 40),
                         Margin = new System.Windows.Forms.Padding(0, 0, 0, 0),
-                        Tag = new ButtonState(i, j, random.Next(0, 10) < 2),
+                        Tag = new ButtonState(i, j, random.Next(0, 10) < 1),
                         TabStop = true,
                     };
                     buttons[i, j].Click += buttons_Click;
@@ -45,8 +45,30 @@ namespace WinFormsApp1
                 int countBomb = CheckBomb(state);
                 button.Text = countBomb.ToString();
                 button.Enabled = false;
+                if (countBomb == 0)
+                {
+                    OpenArroundZeroButtons(state);
+                }
+                
             }
 
+        }
+
+        private void OpenArroundZeroButtons(ButtonState state)
+        {
+            for (int i = state.I - 1; i <= state.I + 1; i++)
+            {
+                for (int j = state.J - 1; j <= state.J + 1; j++)
+                {
+                    if (i > -1 && j > -1 && i < 10 && j < 10)
+                    {
+                        if (buttons[i, j].Enabled == true)
+                        {
+                            buttons_Click(buttons[i, j], null);
+                        }
+                    }
+                }
+            }
         }
 
         private int CheckBomb(ButtonState state)
